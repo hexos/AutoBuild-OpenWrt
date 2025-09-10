@@ -55,7 +55,7 @@ jobs:
         git clone --depth 1 https://github.com/vernesong/OpenClash.git OpenClash
         cd openwrt
         git clone https://github.com/4IceG/luci-app-sms-tool.git package/luci-app-sms-tool
-        echo 'src-git 5GModemSupport https://github.com/Siriling/5G-Modem-Support.git' >> feeds.conf.default
+        echo 'src-git 5GModemSupport https://github.com/LeeHe-gif/5G-Modem-Support.git' >> feeds.conf.default
         echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
         echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
         echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
