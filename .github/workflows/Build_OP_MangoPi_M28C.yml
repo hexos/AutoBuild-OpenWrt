@@ -77,10 +77,11 @@ jobs:
         cd openwrt
         echo 'src-git Qmodem https://github.com/FUjr/QModem.git;main' >> feeds.conf.default
         echo 'src-git istore https://github.com/linkease/istore;main' >> feeds.conf.default
+        echo 'src-git leigod-acc https://github.com/miaoermua/luci-app-leigod-acc.git;main' >> feeds.conf.default
         echo 'src-git nas https://github.com/linkease/nas-packages.git;master' >> feeds.conf.default
         echo 'src-git nas_luci https://github.com/linkease/nas-packages-luci.git;main' >> feeds.conf.default
         echo "src-git nikki https://github.com/nikkinikki-org/OpenWrt-nikki.git;main" >> "feeds.conf.default"
-        echo "src-git fancontrol https://github.com/rockjake/luci-app-fancontrol.git" >> "feeds.conf.default"
+        echo "src-git fancontrol https://github.com/LeeHe-gif/luci-app-fancontrol.git;main" >> "feeds.conf.default"
         echo "status=success" >> ${GITHUB_OUTPUT}
         
     - name: Free up disk space
